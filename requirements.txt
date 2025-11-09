@@ -1,0 +1,5 @@
+pandas
+matplotlib
+cartopy
+requests
+pyarrow
