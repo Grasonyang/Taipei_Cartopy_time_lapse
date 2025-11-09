@@ -8,6 +8,7 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent.parent
 DATA_DIR = BASE_DIR / "data"
 RAW_DATA_DIR = DATA_DIR / "raw"
+INTERIM_DATA_DIR = DATA_DIR / "interim"  # 中間處理資料
 PROCESSED_DATA_DIR = DATA_DIR / "processed"
 OUTPUT_DIR = BASE_DIR / "outputs"
 FIGURES_DIR = OUTPUT_DIR / "figures"
@@ -15,7 +16,8 @@ VIDEOS_DIR = OUTPUT_DIR / "videos"
 
 # --- Data Files ---
 RAW_DATA_FILE = RAW_DATA_DIR / "113年-臺北市A1及A2類交通事故明細.csv"
-PROCESSED_DATA_FILE = PROCESSED_DATA_DIR / "taipei_113_clean.parquet"
+INTERIM_DATA_FILE = INTERIM_DATA_DIR / "taipei_113_cleaned.parquet"  # 清洗後的中間資料
+PROCESSED_DATA_FILE = PROCESSED_DATA_DIR / "taipei_113_clean.parquet"  # 最終處理後的資料
 
 # --- Column Mappings ---
 COLUMN_MAP = {
