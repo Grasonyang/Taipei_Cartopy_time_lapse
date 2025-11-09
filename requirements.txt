@@ -3,3 +3,5 @@ matplotlib
 cartopy
 requests
 pyarrow
+geopandas
+shapely
